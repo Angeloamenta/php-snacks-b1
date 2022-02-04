@@ -9,11 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container" id="app">
-        <div v-for="car in cars">
+        <div class="car" v-for="car in cars">
             <h2>Brand {{car.brand}}</h2>
             <h3>Modello {{car.modello}}</h3>
             <div class="img">

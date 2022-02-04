@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.car {
+    width: calc(100% / 3 - 10px);
+    padding: 10px;
+    border: 2px solid gray;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.car .img {
+    width: 150px;
+}
+
+.img img {
+    width: 100%;
+}
+
+li {
+    margin-top: 5px;
+}
