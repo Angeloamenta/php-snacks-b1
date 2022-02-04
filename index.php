@@ -14,7 +14,14 @@
 </head>
 <body>
     <div class="container" id="app">
-        <div class="car" v-for="car in cars">
+    <select @change="filtroArray" v-model="selected">
+  <option>all</option>
+  <option>blue</option>
+  <option>rosso</option>
+  <option>grigio</option>
+  <option>arancione</option>
+</select>
+        <div class="car" v-for="(car, index) in arrayCars">
             <h2>{{car.brand}}</h2>
             <h1>{{car.modello}}</h1>
             <div class="img">
