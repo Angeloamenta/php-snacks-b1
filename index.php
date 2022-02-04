@@ -15,8 +15,8 @@
 <body>
     <div class="container" id="app">
         <div class="car" v-for="car in cars">
-            <h2>Brand {{car.brand}}</h2>
-            <h3>Modello {{car.modello}}</h3>
+            <h2>{{car.brand}}</h2>
+            <h1>{{car.modello}}</h1>
             <div class="img">
                 <img :src="car.foto" alt="">
             </div>
@@ -24,16 +24,16 @@
                 {{car.caratteristicheAuto}}
             </div>
             <ul>
-                <li>Anno {{car.anno}}</li>
-                <li>Colore {{car.colore}}</li>
-                <li>Alimentazione {{car.alimentazione}}</li>
-                <li>Chilometraggio {{car.chilometraggio}}</li>
-                <li>Porte {{car.porte}}</li>
-                <li>Cavalli {{car.cavalli}}</li>
-                <li>N Proprietari {{car.nProprietari}}</li>
-                <li>Condizioni {{car.condizioni}}</li>
+                <li>Anno: {{car.anno}}</li>
+                <li>Colore: {{car.colore}}</li>
+                <li>Alimentazione: {{car.alimentazione}}</li>
+                <li>Chilometraggio: {{car.chilometraggio}}</li>
+                <li>Porte: {{car.porte}}</li>
+                <li>Cavalli: {{car.cavalli}}</li>
+                <li>N Proprietari: {{car.nProprietari}}</li>
+                <li>Condizioni: {{car.condizioni}}</li>
             </ul>
-            <h3>Prezzo {{car.prezzo}}</h3>
+            <h3>Prezzo: {{car.prezzo}}</h3>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
