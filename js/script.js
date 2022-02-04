@@ -19,7 +19,11 @@ var app = new Vue({
     methods: {
         filtroArray() {
           this.arrayCars = this.cars.filter(car => car.colore === this.selected)
+          if (this.selected === "all") {
+              this.arrayCars = this.cars
+          }
           console.log("ciao");
+          
         }
     }
   })
